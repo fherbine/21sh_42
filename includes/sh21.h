@@ -6,7 +6,7 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 17:04:54 by fherbine          #+#    #+#             */
-/*   Updated: 2018/04/09 19:06:41 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/04/09 19:13:05 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,8 @@ void				termios_failure(void);
 // Functions in change_term.c
 t_trm				init_term(void);
 void				close_term(void);
+
+// Functions in prompt.c
+void				display_prompt(void);
 
 #endif

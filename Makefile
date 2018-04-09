@@ -6,7 +6,7 @@
 #    By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/13 16:28:57 by fherbine          #+#    #+#              #
-#    Updated: 2018/04/09 18:26:50 by fherbine         ###   ########.fr        #
+#    Updated: 2018/04/09 19:13:39 by fherbine         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = 21sh
 INCLUDES = includes
 SRC_PATH = sources
 OBJ_PATH = $(SRC_PATH)/debug
-SRC_NAME = main.c edit_actions.c shell_errors.c
+SRC_NAME = main.c edit_actions.c shell_errors.c prompt.c
 OBJ_NAME = $(SRC_NAME:.c=.o)
 SRC = $(addprefix $(SRC_PATH)/,$(SRC_NAME))
 OBJ = $(addprefix $(OBJ_PATH)/,$(OBJ_NAME))
