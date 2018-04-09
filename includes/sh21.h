@@ -6,7 +6,7 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 17:04:54 by fherbine          #+#    #+#             */
-/*   Updated: 2018/04/09 18:26:34 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/04/09 18:38:25 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,9 @@ void				goto_cursor(int x, int y);
 
 // Fuctions in shell_errors.c
 void				termios_failure(void);
+
+// Functions in change_term.c
+t_trm				init_term(void);
+void				close_term(void);
 
 #endif
