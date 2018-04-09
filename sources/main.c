@@ -6,13 +6,18 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 17:16:19 by fherbine          #+#    #+#             */
-/*   Updated: 2018/04/09 17:16:59 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/04/09 18:43:31 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "sh21.h"
 
-int		main(void)
+int			main(void)
 {
+	t_trm	trm_params;
+	
+	trm_params = init_term();
+	// main code
+	close_term();
 	return(0);
 }
