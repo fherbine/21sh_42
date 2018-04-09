@@ -6,7 +6,7 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 17:04:54 by fherbine          #+#    #+#             */
-/*   Updated: 2018/04/09 18:16:03 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/04/09 18:26:34 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,8 @@ typedef struct		s_trm
 
 // Functions in edit_actions.c
 void				goto_cursor(int x, int y);
+
+// Fuctions in shell_errors.c
+void				termios_failure(void);
 
 #endif
