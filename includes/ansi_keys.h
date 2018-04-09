@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sh21.h                                             :+:      :+:    :+:   */
+/*   ansi_keys.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/09 17:04:54 by fherbine          #+#    #+#             */
-/*   Updated: 2018/04/09 17:28:39 by fherbine         ###   ########.fr       */
+/*   Created: 2018/04/09 17:28:57 by fherbine          #+#    #+#             */
+/*   Updated: 2018/04/09 18:07:45 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SH21_SH
+#ifndef ANSI_KEYS_H
 
-# define SH21_SH
+# define K_ESC "\033";
 
-#include "../libft/libft.h"
-#include "./ansi_mov.h"
-#include "./ansi_keys.h"
+# define K_LEFT "\033[D"
+# define K_RIGHT "\033[C"
+# define K_UP "\033[A"
+# define K_DOWN "\033[B"
+
 
 #endif
