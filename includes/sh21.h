@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_char.c                                    :+:      :+:    :+:   */
+/*   sh21.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: llacaze <llacaze@student.42.fr>            +#+  +:+       +#+        */
+/*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/06 16:18:39 by llacaze           #+#    #+#             */
-/*   Updated: 2018/02/19 18:48:16 by llacaze          ###   ########.fr       */
+/*   Created: 2018/04/09 17:04:54 by fherbine          #+#    #+#             */
+/*   Updated: 2018/04/09 17:06:08 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
-#include <stdio.h>
+#ifndef SH21_SH
 
-int		ft_check_char(char *str, char c)
-{
-	int		i;
-	int		count;
+# define SH21_SH
 
-	count = 0;
-	i = -1;
-	if (str)
-		while (str[++i])
-			if (str[i] == c)
-				count++;
-	return (count);
-}
+#include "../libft/libft.h"
+
+#endif

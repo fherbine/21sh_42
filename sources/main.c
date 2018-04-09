@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: llacaze <llacaze@student.42.fr>            +#+  +:+       +#+        */
+/*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/25 23:18:23 by llacaze           #+#    #+#             */
-/*   Updated: 2017/12/12 14:08:17 by llacaze          ###   ########.fr       */
+/*   Created: 2018/04/09 17:16:19 by fherbine          #+#    #+#             */
+/*   Updated: 2018/04/09 17:16:59 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
-#include <stdlib.h>
-#include <stdio.h>
+#include "sh21.h"
 
-void	ft_swap(int *a, int *b)
+int		main(void)
 {
-	int		tmp;
-
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	return(0);
 }

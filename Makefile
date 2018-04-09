@@ -6,7 +6,7 @@
 #    By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/13 16:28:57 by fherbine          #+#    #+#              #
-#    Updated: 2018/04/09 16:11:49 by fherbine         ###   ########.fr        #
+#    Updated: 2018/04/09 17:17:33 by fherbine         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,10 +14,7 @@ NAME = 21sh
 INCLUDES = includes
 SRC_PATH = sources
 OBJ_PATH = $(SRC_PATH)/debug
-SRC_NAME = main.c max_free.c minishell.c cmd_utils.c cmd_list.c \
-		   ms_out_errors.c parser.c prmpt.c ftsh_debug.c bi_env.c bi_exit.c \
-		   utils.c sh_errors.c more_cmd.c shvar_utils.c bi_echo.c \
-		   bi_unsetenv.c bi_setenv.c init_env.c bi_cd.c bi_history.c auxiliary.c
+SRC_NAME = main.c
 OBJ_NAME = $(SRC_NAME:.c=.o)
 SRC = $(addprefix $(SRC_PATH)/,$(SRC_NAME))
 OBJ = $(addprefix $(OBJ_PATH)/,$(OBJ_NAME))
