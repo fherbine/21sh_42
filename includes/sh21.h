@@ -6,7 +6,7 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 17:04:54 by fherbine          #+#    #+#             */
-/*   Updated: 2018/04/09 19:13:05 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/04/09 19:38:50 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 typedef struct		s_trm
 {
 	struct winsize	sz; // infos about terminal size
+	int				prompt_len;
 }					t_trm;
 
 // Functions in edit_actions.c
@@ -41,6 +42,6 @@ t_trm				init_term(void);
 void				close_term(void);
 
 // Functions in prompt.c
-void				display_prompt(void);
+t_trm				display_prompt(t_trm term_param);
 
 #endif
