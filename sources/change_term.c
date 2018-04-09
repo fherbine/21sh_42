@@ -6,7 +6,7 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 18:17:41 by fherbine          #+#    #+#             */
-/*   Updated: 2018/04/09 18:36:38 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/04/09 18:56:37 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_trm				init_term(void)
 	term.c_cc[VTIME] = 0;
 	if (tcsetattr(0, TCSADRAIN, &term) == -1)
 		termios_failure();
-	ioctl(1, TIOCGWINSZ, &(trm_params.sz));
+	ioctl(0, TIOCGWINSZ, &(trm_params.sz));
 	return (trm_params);
 }
 
