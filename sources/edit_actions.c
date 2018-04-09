@@ -6,11 +6,11 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 18:12:13 by fherbine          #+#    #+#             */
-/*   Updated: 2018/04/09 18:16:00 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/04/09 18:40:51 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/sh21.sh"
+#include "../includes/sh21.h"
 
 void	goto_cursor(int x, int y)
 {

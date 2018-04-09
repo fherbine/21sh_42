@@ -6,13 +6,13 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 17:28:57 by fherbine          #+#    #+#             */
-/*   Updated: 2018/04/09 18:07:45 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/04/09 18:41:32 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ANSI_KEYS_H
 
-# define K_ESC "\033";
+# define K_ESC "\033"
 
 # define K_LEFT "\033[D"
 # define K_RIGHT "\033[C"

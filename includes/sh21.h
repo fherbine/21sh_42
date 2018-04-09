@@ -6,7 +6,7 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 17:04:54 by fherbine          #+#    #+#             */
-/*   Updated: 2018/04/09 18:38:25 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/04/09 18:40:27 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 # define SH21_SH
 
-#include "../libft/libft.h"
-#include "./ansi_mov.h"
-#include "./ansi_keys.h"
+# include "../libft/libft.h"
+# include "./ansi_mov.h"
+# include "./ansi_keys.h"
+
+# include <termios.h>
+# include <sys/ioctl.h>
 
 typedef struct		s_trm
 {
