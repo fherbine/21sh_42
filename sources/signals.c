@@ -6,7 +6,7 @@
 /*   By: llacaze <llacaze@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/09 17:43:05 by llacaze           #+#    #+#             */
-/*   Updated: 2018/04/09 17:48:05 by llacaze          ###   ########.fr       */
+/*   Updated: 2018/04/09 19:00:35 by llacaze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 /*
 ** A apapeler :
-** sig_handler avec la fonction signal(SIGINT, sig_handler) dans le cas ou child pid est different de -1 apres avoir fork
-** et avant le wait de l'adress du pid du child;
-** sig_hand_emp pareil que l'autre mais cette fois a placer juste avant de read et de balancer 
-** les fonctions de check et d execution
+** sig_handler with the signal function signal(SIGINT, sig_handler) when child pid is different of -1 after the fork
+** and before the wait of the adress of the pid;
+** sig_hand_emp as same as the other function but this time you put it just before the read
 */
 
 void	sig_handler(int sig)
