@@ -1,0 +1,27 @@
+|=============================================================================|
+|  => on entre une ligne de commande exemple:								  |
+|                   "$> echo tutu | cat -e && ls *"                           |
+|
+|
+|                                 PARSING:                                    |
+|
+|            tu recupere une liste chainee typedef t_parsed:
+|
+|
+|   typedef struct s_parsed
+|   {
+		char	   		*cmd;
+		t_sep      		separator; (/!\ ENUM)
+		struct s_parsed	*next;
+	}
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
