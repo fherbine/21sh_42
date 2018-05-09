@@ -7,3 +7,42 @@ renvoyer sur la sortie standard.
 2. "<" : Redirection d'entree
 Specifie a un programme qd'utiliser un fichier comme entree standard a la
 place du clavier de l'utilisateur
+
+=================================
+
+Bien utiliser les redirections.
+
+1. Descripteurs de fichiers et redirections avancees.
+
+Un Descripteur de ficheri = un identifiant.
+
+0 = stdin.
+1 = stdout.
+2 = stderr.
+
+Pour rediriger les autres descripteurs vers un fichier on utilise X> ou X prendra la valeur
+du descripteur vers le quel on veut rediriger.
+
+Pour rediriger vers un autre descripteur on utilise "&".
+Connecter les descripteurs d un processus entre eux. Utile losque l'on ecrit
+des scripts shell pour par exemple ecrire sur la sortie d erreur.
+Pour faire ca on utilise "X>&Y" ou X prend l'identifiant descripteur source 
+(1 etant la valeur par defaut ">&2") et Y l'ientidiant du descripteur vers
+lequel on veut rediriger.
+
+=================================
+
+Les dernieres facons de rediriger
+
+3. ">>" : Ajout en fin de fichier
+la redirection de sortie efface tout ce qu'il y a de base dans le fichier Pour
+le remplacer par la redirection que l'on souhaite faire.
+La redirection ">>" va permettre de ne rien effacer et seulement d'ajouter a
+la fin du fichier.
+
+4. "<<" : Lire depuis l'entree standard
+Ouvre l'entree standard et permet de lire les arguments ou commandes depuis
+l'entree standard.
+"sort -n << FIN > nb_tries.txt 2>&1" on va rentrer des nombres depuis l'entree 
+standard et utiliser le mot "FIN" pour quitter et commencer a realiser le tri.
+Le tout sera donc rediriger vers nb_tries.txt.
