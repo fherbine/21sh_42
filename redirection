@@ -1,0 +1,9 @@
+Les differentes redirections
+
+1. ">" : Redirection de sortie
+Indique a un processus de rediriger tout dans le "> [fichier]" au lieu de le
+renvoyer sur la sortie standard.
+
+2. "<" : Redirection d'entree
+Specifie a un programme qd'utiliser un fichier comme entree standard a la
+place du clavier de l'utilisateur

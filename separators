@@ -1,0 +1,17 @@
+Differents separateurs et la description de chacun + les cas d'erreurs
+
+1. Le ";"
+Permet d'ecrire plusieurs commandes sur une meme ligne et toutes les commandes
+sont executees dans l'ordre.
+Toutes les commandes seront executees meme si la commande precedente a echouee.
+sauf si on utilise "set -e" juste avant dans quel cas bash balancera une erreur.
+
+2. Le "&&"
+Execute la commande seulement si la commande precedente a ete executee avec succes.
+
+3. Le "||"
+Execute la commande seulementment si la commande precedente a echouee.
+
+4. Le "|"
+Execute la commande sur le resultat de la commande precedente.
+
