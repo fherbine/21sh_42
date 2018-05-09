@@ -6,7 +6,7 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:49:27 by fherbine          #+#    #+#             */
-/*   Updated: 2018/05/09 15:15:55 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/05/09 15:21:45 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	init_term_struct(void)
 {
 	t_termios term;
 
-	if (tcgetattr(0, term) == -1)
+	if (tcgetattr(0, &term) == -1)
 		exit(EXIT_FAILURE);
 	term.c_lflag &= ~(ICANON);
 	term.c_lflag &= ~(ECHO);
@@ -42,11 +42,28 @@ void	close_term(void)
 /* --------------------- tst func ------------------ */
 
 void	tst(void)
-{}
+{
+	char	buffer[3];
+	while (1)
+	{
+		read(0, buffer, 3);
+		printf("%c|%c|%c\n", buffer[0], buffer[1], buffer[2]);
+		if (buffer[0] == 27)
+			printf("C'est une fleche !\n");
+		else if (buffer[0] == 4)
+		{
+			printf("Ctlr+d, on quitte !\n");
+			return ;
+		}
+	}
+}
 
 /* --------------------- main ----------------------*/
 
 int		main(void)
 {
+	init_term_struct();
+	tst();
+	close_term();
 	return (0);
 }
