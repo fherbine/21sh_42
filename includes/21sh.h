@@ -6,7 +6,7 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:53:34 by fherbine          #+#    #+#             */
-/*   Updated: 2018/05/09 15:44:11 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/05/09 15:47:12 by llacaze          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ typedef	struct termios t_termios;
 
 typedef enum			e_separator
 {
-	\;, &&, ||, |;
+	;, &&, ||, |;
 }						t_separator;
 
 typedef enum			e_redir
