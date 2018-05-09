@@ -6,7 +6,7 @@
 /*   By: fherbine <fherbine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:49:27 by fherbine          #+#    #+#             */
-/*   Updated: 2018/05/09 15:21:45 by fherbine         ###   ########.fr       */
+/*   Updated: 2018/05/09 15:33:10 by fherbine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,12 @@ void	tst(void)
 	char	buffer[3];
 	while (1)
 	{
+		buffer[0] = 0;
+		buffer[1] = 0;
+		buffer[2] = 0;
 		read(0, buffer, 3);
 		printf("%c|%c|%c\n", buffer[0], buffer[1], buffer[2]);
+		printf("%d|%d|%d\n", buffer[0], buffer[1], buffer[2]);
 		if (buffer[0] == 27)
 			printf("C'est une fleche !\n");
 		else if (buffer[0] == 4)
